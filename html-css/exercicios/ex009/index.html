@@ -4,38 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon">
-    <bdo dir="rtl">sfa</bdo>
+    <title>Lista</title>
+    <link rel="shortcut icon" href="favicon1.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>Outras Formatações</h1>
-    <h2>fonte mono espaçada </h2>
-    <h2>Codigo fonte</h2>
-    <p>É escrito em java e nao sei o <code>É escrito em java e nao sei o</code> </p>
-    <pre>
-        <code>
-private void btn_excluirUsuario_Click(object sender, EventArgs e)
-{
-    DialogResult res = MessageBox.Show("Confirma exclusão ?","EXCLUIR! CUIDADO!!!!", MessageBoxButtons.YesNo);
-    if(res == DialogResult.Yes)
-    {
-        Banco.DeletarUsuario(tb_id.Text);
-        dgv_usuario.Rows.Remove(dgv_usuario.CurrentRow);
-    }
-}       </code>
-    </pre>
-    <h2>Citações</h2>
-    <p>Como diri ARMANO <q>vamos voltar!</q></p>
-    <p>segundo o autor no seu livro nao sei das quantas</p>
-    <blockquote cite="https://books.google.com.br/books?id=E8ZtDwAAQBAJ&printsec=frontcover&dq=HTML&hl=pt-BR&sa=X&ved=2ahUKEwj25saFhuXuAhUkILkGHRRgDY8Q6wEwBXoECAUQAQ#v=onepage&q=HTML&f=false">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis aliquam maxime ut, laboriosam, vel quam beatae voluptatem possimus tempore exercitationem officiis sed unde reiciendis incidunt molestiae cumque! Sapiente, nisi praesentium.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam sunt debitis inventore minus. Optio autem id mollitia dolores, vero, quisquam, corrupti dicta sapiente perferendis velit blanditiis amet consequuntur? Distinctio, dolor.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem blanditiis dignissimos assumenda incidunt exercitationem autem temporibus hic minima provident ipsum alias omnis doloremque non, nulla accusantium delectus eius aperiam obcaecati?
-    </blockquote>
-    <p>O jogo de <abbr title="jogo mt lelga que o vitão é mt bom">futebol</abbr> é tão bom quanto o de <abbr title="outro jogo com bola">basquete</abbr></p>
-    <h2>Texto invertido</h2>
-    <p><bdo dir="rtl">Estou aprendndo a criar coisas em html</bdo></p>
+    <h1>Trabalando com listas</h1>   
+    <h2>Lista Ordenadas</h2> 
+    <ol type="I"> <!--1 A a I i -->
+        <li>Acordar</li>
+        <li>Tomar Café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para facul</li>
+        <li>Trampa</li>
+        <li>Ir para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Lista Não Ordenadas </h2> 
+    <ul type = "square"> <!-- disc circle square-->
+        <li>Acordar</li>
+        <li>Tomar Café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para facul</li>
+        <li>Trampa</li>
+        <li>Ir para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ul>
 
     
 </body>
