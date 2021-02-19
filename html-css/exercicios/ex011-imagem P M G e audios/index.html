@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <H1>Imagens dinâmicas</H1>
+    <p>temnte a brir esse site em dipositivos de tamanho dirferentes ou simplesmente vai mudando o tamanho do nacega </p>
+        
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/foto-P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem/foto-M.png" type="image/png">
+        <img src="imagem/foto-G.png" alt="">
+        <source media="(min-width: )" srcset="" type="image/">
+    </picture>
+
+    <h1>Reprodusindo muscias</h1>
+    <p>Vamos colocar o batidão</p>
+        <br>
+    <!-- MP3 WAV OGG-->
+    <audio src="midia/Dbraz_Lenda.mp3" controls autoplay></audio>
+
+    <h1>Outra meneira de colocar musica/audio</h1>
+    <audio preload="metadata" controls>
+        <!--O navagador vai tentar carregar todos os sources se nao coneguir ele vai exibir essa mensagem-->
+        <source src="midia/Dbraz_Lenda.mp3" type="audio/mpeg">
+        <source src="midia/Dbraz_Lenda.ogg" type="audio/ogg">
+        <source src="midia/Dbraz_Lenda.wav" type="audio/wav"> <!--esse arquivo é normalmente mt pesado nao ustilizar-->
+
+        <p>Infelizente não foi possvel vc escutar lique <a href="midia/Dbraz_Lenda.mp3">aqui</a> para baixar</p>
+    </audio>
+        
+    
+</body>
+</html>
